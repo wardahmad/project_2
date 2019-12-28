@@ -39527,3 +39527,423 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 100ms (Views: 99.3ms | ActiveRecord: 0.0ms | Allocations: 21892)
 
 
+Started GET "/" for 127.0.0.1 at 2019-12-28 21:44:44 +0300
+Started GET "/" for 127.0.0.1 at 2019-12-28 21:44:44 +0300
+  [1m[35m (470.3ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (338.8ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (8.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by CountriesController#index as HTML
+Completed 401 Unauthorized in 41ms (ActiveRecord: 0.0ms | Allocations: 1906)
+
+
+  [1m[35m (24.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by CountriesController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 311)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-12-28 21:44:49 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 106.5ms | Allocations: 641)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 474.5ms | Allocations: 3760)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 26.6ms | Allocations: 443)
+Completed 200 OK in 6014ms (Views: 5943.1ms | ActiveRecord: 45.6ms | Allocations: 61618)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-12-28 21:45:06 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"snCe60lGS3KWgj+q2GZk7HT7oLqxE/hIvyZF1vG3KNOjYF1ngYrhn+z4EeW/Sq17lVHyqNxlJE99vsxObsMhxQ==", "user"=>{"email"=>"whitelight43@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mUser Load (70.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'whitelight43@hotmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 530ms (ActiveRecord: 70.1ms | Allocations: 6268)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-28 21:45:07 +0300
+Processing by CountriesController#index as HTML
+  [1m[36mUser Load (71.1ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (53.3ms)[0m  [1m[34mSELECT `countries`.* FROM `countries` WHERE `countries`.`user_id` = 1[0m
+  ↳ app/views/countries/index.html.erb:9
+  Rendered countries/index.html.erb within layouts/application (Duration: 152.3ms | Allocations: 6423)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.3ms | Allocations: 116)
+Completed 200 OK in 447ms (Views: 182.9ms | ActiveRecord: 182.2ms | Allocations: 31036)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-12-28 21:45:12 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zB5MLDjFKf7iMrW43RPEYgg9XgHpmuUVNIT9q9LdRbeoyLHhii8wEuUC3rh0eOUFQEICgBk6/mlGoysUGGeLUw=="}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 47ms (ActiveRecord: 0.6ms | Allocations: 2828)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-28 21:45:12 +0300
+Processing by CountriesController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 324)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-12-28 21:45:12 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1141)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.3ms | Allocations: 149)
+Completed 200 OK in 85ms (Views: 84.0ms | ActiveRecord: 0.0ms | Allocations: 21872)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-12-28 21:45:22 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"2uJDlqHvFnvCTvfFfq4OhB/KWv3jcB/nqHl54gOMzo/0MXVoG1BkrG89RA9mvR/VI6zNtLJy6gjNNk2Ens73yQ==", "user"=>{"email"=>"ward@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'ward@hotmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 152ms (ActiveRecord: 0.6ms | Allocations: 2708)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-28 21:45:23 +0300
+Processing by CountriesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (1.5ms)[0m  [1m[34mSELECT `countries`.* FROM `countries` WHERE `countries`.`user_id` = 2[0m
+  ↳ app/views/countries/index.html.erb:9
+  Rendered countries/index.html.erb within layouts/application (Duration: 4.4ms | Allocations: 687)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.2ms | Allocations: 105)
+Completed 200 OK in 113ms (Views: 108.9ms | ActiveRecord: 2.0ms | Allocations: 22623)
+
+
+Started GET "/countries/new" for 127.0.0.1 at 2019-12-28 21:45:29 +0300
+Processing by CountriesController#new as HTML
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering countries/new.html.erb within layouts/application
+  Rendered countries/_form.html.erb (Duration: 31.4ms | Allocations: 840)
+  Rendered countries/new.html.erb within layouts/application (Duration: 34.0ms | Allocations: 1151)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.2ms | Allocations: 115)
+Completed 200 OK in 120ms (Views: 115.9ms | ActiveRecord: 0.6ms | Allocations: 23161)
+
+
+Started POST "/countries" for 127.0.0.1 at 2019-12-28 21:45:56 +0300
+Processing by CountriesController#create as HTML
+  Parameters: {"authenticity_token"=>"85m2Qav5B9hzx5wDrHBhdQ3S2tBeQgPZleNOlwy4At2v7bIdcvkNCoSHqIZEZ8H44XufX9b57tRi6LugB+g6EQ==", "country"=>{"name"=>"saudi", "img"=>"https://www.flagsonline.it/uploads/2016-9-2/420-272/arabia-saudita.jpg", "info"=>"jeddah"}, "commit"=>"Submit"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[35m (26.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/countries_controller.rb:24:in `create'
+  [1m[36mUser Load (6.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/countries_controller.rb:24:in `create'
+  [1m[36mCountry Create (374.5ms)[0m  [1m[32mINSERT INTO `countries` (`name`, `img`, `info`, `created_at`, `updated_at`, `user_id`) VALUES ('saudi', 'https://www.flagsonline.it/uploads/2016-9-2/420-272/arabia-saudita.jpg', 'jeddah', '2019-12-28 18:45:56.615737', '2019-12-28 18:45:56.615737', 2)[0m
+  ↳ app/controllers/countries_controller.rb:24:in `create'
+  [1m[35m (174.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/countries_controller.rb:24:in `create'
+Redirected to http://127.0.0.1:3000/countries
+Completed 302 Found in 885ms (ActiveRecord: 582.7ms | Allocations: 8388)
+
+
+Started GET "/countries" for 127.0.0.1 at 2019-12-28 21:45:57 +0300
+Processing by CountriesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (0.6ms)[0m  [1m[34mSELECT `countries`.* FROM `countries` WHERE `countries`.`user_id` = 2[0m
+  ↳ app/views/countries/index.html.erb:9
+  Rendered countries/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 809)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.3ms | Allocations: 101)
+Completed 200 OK in 92ms (Views: 89.1ms | ActiveRecord: 1.1ms | Allocations: 22720)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-12-28 21:46:05 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+G3WCHbUcsvd8gC6TJ/BcBz8LIEa5EvNmjLaFudOWwUynw013lk3vlRCfMEWeFLmwEYB6Fo7M5YuRhMUU7sRvQ=="}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 8ms (ActiveRecord: 1.0ms | Allocations: 2175)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-28 21:46:05 +0300
+Processing by CountriesController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 292)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-12-28 21:46:05 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1141)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.3ms | Allocations: 149)
+Completed 200 OK in 87ms (Views: 86.0ms | ActiveRecord: 0.0ms | Allocations: 21889)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-28 21:51:38 +0300
+  [1m[35m (46.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by CountriesController#index as HTML
+Completed 401 Unauthorized in 5ms (ActiveRecord: 0.0ms | Allocations: 1290)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-12-28 21:51:38 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.9ms | Allocations: 551)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2028)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 1.0ms | Allocations: 436)
+Completed 200 OK in 154ms (Views: 145.2ms | ActiveRecord: 0.0ms | Allocations: 29629)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-12-28 21:51:58 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"3uEE0ig91rIWt5HIYtrk+nB6W3o/Gk5fr8ghWYY5DbuKSZ9ZIh4XhmZg5MreTKBZrTtx7G8bLWH5UFVW5S8fEw==", "user"=>{"email"=>"whitelight43@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mUser Load (26.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'whitelight43@hotmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 182ms (ActiveRecord: 26.5ms | Allocations: 3926)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-28 21:51:59 +0300
+Processing by CountriesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (58.5ms)[0m  [1m[34mSELECT `countries`.* FROM `countries`[0m
+  ↳ app/views/countries/index.html.erb:39
+  Rendered countries/index.html.erb within layouts/application (Duration: 86.2ms | Allocations: 6684)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.4ms | Allocations: 113)
+Completed 200 OK in 196ms (Views: 128.1ms | ActiveRecord: 59.0ms | Allocations: 30178)
+
+
+Started GET "/countries/2" for 127.0.0.1 at 2019-12-28 21:52:11 +0300
+Processing by CountriesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mCountry Load (24.4ms)[0m  [1m[34mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/countries_controller.rb:11:in `show'
+  Rendering countries/show.html.erb within layouts/application
+  [1m[36mPlace Load (1.1ms)[0m  [1m[34mSELECT `places`.* FROM `places` WHERE `places`.`country_id` = 2[0m
+  ↳ app/views/countries/show.html.erb:8
+  Rendered countries/show.html.erb within layouts/application (Duration: 224.8ms | Allocations: 6887)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.2ms | Allocations: 117)
+Completed 200 OK in 442ms (Views: 111.2ms | ActiveRecord: 239.8ms | Allocations: 32002)
+
+
+Started GET "/places/2" for 127.0.0.1 at 2019-12-28 21:52:13 +0300
+Processing by PlacesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mPlace Load (0.6ms)[0m  [1m[34mSELECT `places`.* FROM `places` WHERE `places`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/places_controller.rb:16:in `show'
+  Rendering places/show.html.erb within layouts/application
+  Rendered places/show.html.erb within layouts/application (Duration: 0.6ms | Allocations: 189)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.4ms | Allocations: 144)
+Completed 200 OK in 128ms (Views: 120.6ms | ActiveRecord: 1.2ms | Allocations: 23520)
+
+
+Started GET "/places/new?country_id=2" for 127.0.0.1 at 2019-12-28 21:52:18 +0300
+Processing by PlacesController#new as HTML
+  Parameters: {"country_id"=>"2"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mCountry Load (0.7ms)[0m  [1m[34mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/places_controller.rb:4:in `new'
+  Rendering places/new.html.erb within layouts/application
+  Rendered places/_form.html.erb (Duration: 105.2ms | Allocations: 1131)
+  Rendered places/new.html.erb within layouts/application (Duration: 106.9ms | Allocations: 1452)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.3ms | Allocations: 116)
+Completed 200 OK in 205ms (Views: 198.8ms | ActiveRecord: 1.3ms | Allocations: 24065)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-12-28 21:52:22 +0300
+Processing by Devise::SessionsController#new as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/
+Filter chain halted as :require_no_authentication rendered or redirected
+Completed 302 Found in 3ms (ActiveRecord: 0.5ms | Allocations: 1842)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-12-28 21:52:31 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"JPu95MmmOBsqCh31RuFIZMnoSe5xueF6gmLrtm9OTKEqPd6hverCjzWo7y7nEvVNgdprv82K+0dnlTfMkP/xZg=="}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 4ms (ActiveRecord: 0.5ms | Allocations: 2317)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-28 21:52:31 +0300
+Processing by CountriesController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 312)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-12-28 21:52:31 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.0ms | Allocations: 1140)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.3ms | Allocations: 149)
+Completed 200 OK in 82ms (Views: 81.6ms | ActiveRecord: 0.0ms | Allocations: 21881)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-12-28 21:52:39 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"pfBVbtTZZrzzcuc013p6qmQcbCOOkdEAcAqO1/jzDnlrahzXxejNHEAJBukU9tbtVTDQwYP/wuQMCiduQ/gIdg==", "user"=>{"email"=>"ward@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'ward@hotmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 138ms (ActiveRecord: 0.6ms | Allocations: 2717)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-28 21:52:39 +0300
+Processing by CountriesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (0.5ms)[0m  [1m[34mSELECT `countries`.* FROM `countries`[0m
+  ↳ app/views/countries/index.html.erb:10
+  Rendered countries/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 1543)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.2ms | Allocations: 110)
+Completed 200 OK in 102ms (Views: 99.3ms | ActiveRecord: 1.0ms | Allocations: 23418)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-28 21:54:41 +0300
+  [1m[35m (48.9ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by CountriesController#index as HTML
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (1.2ms)[0m  [1m[34mSELECT `countries`.* FROM `countries`[0m
+  ↳ app/views/countries/index.html.erb:10
+  Rendered countries/index.html.erb within layouts/application (Duration: 103.4ms | Allocations: 7231)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.8ms | Allocations: 412)
+Completed 200 OK in 519ms (Views: 297.3ms | ActiveRecord: 152.4ms | Allocations: 68830)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-12-28 21:54:48 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"oBULu7HEnJJ/UOT1GvaW/nfUYJa2KLa6H1yZADAnlOb76kTrQ3DVTSuubyiCptcNiRs/w2TnePZDvSPAUBPUgQ=="}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 33ms (ActiveRecord: 0.8ms | Allocations: 7393)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-28 21:54:48 +0300
+Processing by CountriesController#index as HTML
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 319)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-12-28 21:54:48 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 641)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 41.1ms | Allocations: 3523)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 1.4ms | Allocations: 149)
+Completed 200 OK in 140ms (Views: 137.4ms | ActiveRecord: 0.0ms | Allocations: 25682)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-12-28 21:54:52 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1132)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 2.7ms | Allocations: 136)
+Completed 200 OK in 128ms (Views: 127.2ms | ActiveRecord: 0.0ms | Allocations: 21866)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-28 21:57:42 +0300
+  [1m[35m (126.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (18.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by CountriesController#index as HTML
+Completed 401 Unauthorized in 18ms (ActiveRecord: 0.0ms | Allocations: 1544)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-12-28 21:57:43 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.0ms | Allocations: 641)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 24.1ms | Allocations: 3760)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.9ms | Allocations: 443)
+Completed 200 OK in 361ms (Views: 302.9ms | ActiveRecord: 48.8ms | Allocations: 61627)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-12-28 21:57:52 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"aS5KITDdjaNW8ohSpBw8gEaklR8wU2o7+4bz3pFAbsLmC0p4bUMa3yb8ktLp5+NCDh9XaY1Y8JNh7Bozh0mekA==", "user"=>{"email"=>"ward@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mUser Load (26.3ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'ward@hotmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 301ms (ActiveRecord: 26.3ms | Allocations: 6285)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-28 21:57:53 +0300
+Processing by CountriesController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (22.5ms)[0m  [1m[34mSELECT `countries`.* FROM `countries`[0m
+  ↳ app/views/countries/index.html.erb:10
+  Rendered countries/index.html.erb within layouts/application (Duration: 52.6ms | Allocations: 7012)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.2ms | Allocations: 114)
+Completed 200 OK in 170ms (Views: 124.7ms | ActiveRecord: 26.9ms | Allocations: 31095)
+
+
+Started DELETE "/users/sign_out" for 127.0.0.1 at 2019-12-28 21:58:01 +0300
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Ew5nFLngZuGSdBoe3SN4X41m3NRqqMN5XdX7Gv2OSonZTj6Y3MbwWmbavjBd+8cbbnpbmQBIsi1zTSFhB8EhVQ=="}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 2 ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 19ms (ActiveRecord: 0.8ms | Allocations: 2835)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-28 21:58:01 +0300
+Processing by CountriesController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 298)
+
+
+Started GET "/users/sign_in" for 127.0.0.1 at 2019-12-28 21:58:02 +0300
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 134)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1.5ms | Allocations: 1141)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.3ms | Allocations: 149)
+Completed 200 OK in 86ms (Views: 85.5ms | ActiveRecord: 0.0ms | Allocations: 21875)
+
+
+Started POST "/users/sign_in" for 127.0.0.1 at 2019-12-28 21:58:09 +0300
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"authenticity_token"=>"Hueobo4ku3Fg/hz78/WtbdULL6vGkqlSbkHGc97QUGQnJjrRMuDZVmGekIZL/eZ3huF6x1E70TW640KMFk6PNg==", "user"=>{"email"=>"whitelight43@hotmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Login"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`email` = 'whitelight43@hotmail.com' ORDER BY `users`.`id` ASC LIMIT 1[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 158ms (ActiveRecord: 0.5ms | Allocations: 2732)
+
+
+Started GET "/" for 127.0.0.1 at 2019-12-28 21:58:09 +0300
+Processing by CountriesController#index as HTML
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  Rendering countries/index.html.erb within layouts/application
+  [1m[36mCountry Load (0.5ms)[0m  [1m[34mSELECT `countries`.* FROM `countries`[0m
+  ↳ app/views/countries/index.html.erb:39
+  Rendered countries/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1675)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.7ms | Allocations: 106)
+Completed 200 OK in 115ms (Views: 110.9ms | ActiveRecord: 1.5ms | Allocations: 23555)
+
+
+Started GET "/countries/7" for 127.0.0.1 at 2019-12-28 21:58:13 +0300
+Processing by CountriesController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT `users`.* FROM `users` WHERE `users`.`id` = 1 ORDER BY `users`.`id` ASC LIMIT 1[0m
+  [1m[36mCountry Load (0.6ms)[0m  [1m[34mSELECT `countries`.* FROM `countries` WHERE `countries`.`id` = 7 LIMIT 1[0m
+  ↳ app/controllers/countries_controller.rb:11:in `show'
+  Rendering countries/show.html.erb within layouts/application
+  [1m[36mPlace Load (10.9ms)[0m  [1m[34mSELECT `places`.* FROM `places` WHERE `places`.`country_id` = 7[0m
+  ↳ app/views/countries/show.html.erb:8
+  Rendered countries/show.html.erb within layouts/application (Duration: 78.9ms | Allocations: 8178)
+[Webpacker] Everything's up-to-date. Nothing to do
+  Rendered layouts/_nav.html.erb (Duration: 0.2ms | Allocations: 117)
+Completed 200 OK in 203ms (Views: 153.4ms | ActiveRecord: 15.8ms | Allocations: 34194)
+
+
