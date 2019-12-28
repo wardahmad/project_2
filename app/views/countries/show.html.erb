@@ -1,0 +1,30 @@
+<h1 class="display-3 text-center text-monospace" id="h1Show"><%= @country.name %></h1>
+
+<div class="indBtn"><%= link_to "New Place", new_place_path(:country_id => @country.id), { :class => "btn btn-dark" } %></div>
+
+<div class="container">
+<div class="row">
+<div class="card-deck">
+<% @places.each do |place| %>
+  <div class="col-sm-12 ">
+  <div class="card cad">
+  <div class="img"><%= image_tag(place.pic, size: "150x80", alt: "Place Image") %></div>
+    <div class="card-body">
+      <h5 class="card-title fontIndxCou"><%= link_to place.city , place_path(place) %></h5>
+      <p class="card-text fontIndxInfo"><%= place.info %></p>
+      <p class="card-text fontIndxBest"><%= place.vid %></p>
+    </div>
+    <div class="card-footer">
+      <small class="text-muted">
+      <a class="glyphicon glyphicon-edit"></a>
+      <a class="glyphicon glyphicon-remove"></a> 
+      <a class="glyphicon glyphicon-plus"></a>
+      </small>
+    </div>
+  </div>
+  <br><br><br>
+  </div>
+  <% end %>
+</div>
+</div>
+</div>

@@ -1,0 +1,19 @@
+<%= form_for @country do |f| %>
+
+    <div class="input-field col s6 form-group">
+        <%= f.label :name, 'Country Name' %>
+        <%= f.text_field :name , class: "form-control" %>
+    </div>
+
+    <div class="input-field col s6 form-group">
+        <%= f.label :img, 'Flag Image(URL)' %>
+        <%= f.text_field :img , class: "form-control" %>
+    </div>
+
+    <div class="input-field col s6 form-group">
+        <%= f.label :info, 'Information(About Country)' %>
+        <%= f.text_field :info , class: "form-control" %>
+    </div><br>
+
+    <%= f.submit "Submit", :class => "btn btn-dark align-B" %>
+  <% end %>

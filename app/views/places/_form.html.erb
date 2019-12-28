@@ -1,0 +1,23 @@
+<%= form_for @place do |f| %>
+
+    <div class="text-monospace" id="form">
+    <%= f.hidden_field :country_id, :value => @country.id %>
+    </div>
+    <div class="input-field col s6 form-group">
+        <%= f.label :city, 'City Name' %>
+        <%= f.text_field :city , class: "form-control"%>
+    </div>
+    <div class="input-field col s6 form-group">
+        <%= f.label :info, 'Information(Location Name)' %>
+        <%= f.text_field :info , class: "form-control"%>
+    </div>
+        <div class="input-field col s6 form-group">
+        <%= f.label :pic, 'Image' %>
+        <%= f.text_field :pic , class: "form-control"%>
+    </div>
+        <div class="input-field col s6 form-group">
+        <%= f.label :vid, 'Video' %>
+        <%= f.text_field :vid , class: "form-control"%>
+    </div>
+    <%= f.submit "Submit", :class => "btn btn-dark align-B" %>
+  <% end %>
